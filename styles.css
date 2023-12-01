@@ -1,5 +1,4 @@
-/*
-  Google Fonts
+Google Fonts
   https://fonts.google.com/specimen/Righteous
 */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
@@ -10,6 +9,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 html {
@@ -163,3 +163,40 @@ footer a:hover {
 }
 
 /* Media queries */
+@media only screen and (min-width: 769px ) and (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 250px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px 0px;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  footer ul {
+    list-style: none;;
+  }
+  footer h4 {
+    border-bottom: none;
+  }
+}
